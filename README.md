@@ -11,3 +11,8 @@ mkdir wasmtime-c-api&& tar -xvf wasmtime-v0.32.0-x86_64-linux-c-api.tar.xz --str
 wget https://raw.githubusercontent.com/bytecodealliance/wasmtime-cpp/main/include/wasmtime.hh -O wasmtime-c-api/include/wasmtime.hh
 rm wasmtime-v0.32.0-x86_64-linux-c-api.tar.xz
 ```
+#### Compile
+```bash
+cmake .
+make
+```
