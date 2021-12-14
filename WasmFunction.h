@@ -11,5 +11,6 @@ private:
 public:
     WasmFunction();
     ~WasmFunction();
-    void runWatProgram(const std::string &fileName) const;
+    void runWatFile(const std::string &fileName) const;
+    void runWat(const std::string &watString) const;
 };

@@ -25,12 +25,16 @@ std::string readFile(const std::string name)
   return strStream.str();
 }
 
-void WasmFunction::runWatProgram(const std::string &fileName) const
+void WasmFunction::runWatFile(const std::string &fileName) const
 {
   // Read our input file, which in this case is a wat text file.
   auto wat = readFile(fileName);
-  // 
-  auto module = wasmtime::Module::compile(*engine, wat).unwrap();
+  runWat(wat);
+}
+
+void WasmFunction::runWat(const std::string &watString) const
+{
+  auto module = wasmtime::Module::compile(*engine, watString).unwrap();
   auto instance = wasmtime::Instance::create(store, module, {}).unwrap();
 
   // Invoke `gcd` export

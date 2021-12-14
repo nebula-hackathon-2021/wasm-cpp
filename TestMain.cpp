@@ -5,5 +5,5 @@
 
 int main() {
   WasmFunction wasmFunction;
-  wasmFunction.runWatProgram("../gcd.wat");
+  wasmFunction.runWatFile("../gcd.wat");
 }
