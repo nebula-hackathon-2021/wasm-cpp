@@ -23,5 +23,5 @@
     end
     local.get 2
   )
-  (export "gcd" (func $gcd))
+  (export "main" (func $gcd)) ;; export with main
 )
