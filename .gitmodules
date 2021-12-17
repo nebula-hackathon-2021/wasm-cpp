@@ -1,0 +1,3 @@
+[submodule "thirdparty/wasmedge_wasi_socket"]
+	path = thirdparty/wasmedge_wasi_socket
+	url = https://github.com/second-state/wasmedge_wasi_socket.git
