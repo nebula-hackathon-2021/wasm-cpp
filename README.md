@@ -1,12 +1,33 @@
 # wasm-cpp
 
-**The simple test of wasm in cpp does not include any performance evaluation.**
+**Please see our [main repository](https://github.com/nebula-hackathon-2021/nebula) for the application of the demo below.**
 
-#### Include
+## Demo List
+
+| Name   | Description             | Runtime  | Param                    |
+| ------ | ----------------------- | -------- | ------------------------ |
+| [addTwo](./demo/addTwo) | add two number          | wasmtime | (INT32 INT32) -> (INT32) |
+| [gcd](./demo/gcd)    | greatest common divisor | wasmtime | (INT32 INT32) -> (INT32) |
+| Feishu Bot | call Feishu api and send message | WasmEdge | (STRING) -> BOOL |
+| Data Clustering by TensorFlow |                         |          |  |
+
+
+
+
+
+
+
+
+
+
+
+
+
+## How to develop
+
+#### Include runtime
 * [wasmtime](https://github.com/bytecodealliance/wasmtime)
 * [WasmEdge](https://github.com/WasmEdge/WasmEdge)
-  
-## How to develop
 
 ### wasmtime
 [Official guide](https://github.com/bytecodealliance/wasmtime-cpp)
@@ -27,3 +48,8 @@ make TestWasmtimeMain
 
 ### WasmEdge
 [Official guide](https://github.com/WasmEdge/WasmEdge/blob/master/docs/c_api_quick_start.md)
+
+```bash
+mkdir build && cd build && cmake ../ 
+make TestWasmEdgeMain
+```
