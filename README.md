@@ -4,12 +4,13 @@
 
 ## Demo List
 
-| Name   | Description             | Runtime  | Param                    |
-| ------ | ----------------------- | -------- | ------------------------ |
-| [addTwo](./demo/addTwo) | add two number          | wasmtime | (INT32 INT32) -> (INT32) |
-| [gcd](./demo/gcd)    | greatest common divisor | wasmtime | (INT32 INT32) -> (INT32) |
-| Feishu Bot | call Feishu api and send message | WasmEdge | (STRING) -> BOOL |
-| Data Clustering by TensorFlow |                         |          |  |
+| Name                      | Description                      | Runtime  | Param                    |
+|---------------------------|----------------------------------| -------- |--------------------------|
+| [addTwo](./demo/addTwo)   | add two number                   | wasmtime | (INT32 INT32) -> (INT32) |
+| [gcd](./demo/gcd)         | greatest common divisor          | wasmtime | (INT32 INT32) -> (INT32) |
+| [string](./demo/string)   | return string                    | WasmEdge | (STRING) -> (STRING)      |
+| Feishu Bot                | call Feishu api and send message | WasmEdge | (STRING) -> BOOL         |
+| Data Clustering by TensorFlow |                                  |          |                          |
 
 
 

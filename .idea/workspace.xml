@@ -21,13 +21,8 @@
     <cargoProject FILE="$PROJECT_DIR$/../wasmedge-quickjs/examples/embed_js_module/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e39a54-216b-48e9-bff7-3271252508d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/string/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/string/say/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/string/say/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/string/say/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/string/say/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestWasmEdgeMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TestWasmEdgeMain.cpp" afterDir="false" />
+    <list default="true" id="e5e39a54-216b-48e9-bff7-3271252508d4" name="Changes" comment="Support Str">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,8 +164,16 @@
       <workItem from="1639929728126" duration="271000" />
       <workItem from="1639931424237" duration="6138000" />
       <workItem from="1640093147636" duration="1068000" />
-      <workItem from="1640188535222" duration="13274000" />
+      <workItem from="1640188535222" duration="13381000" />
     </task>
+    <task id="LOCAL-00001" summary="Support Str">
+      <created>1640280287554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640280287554</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,5 +189,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Support Str" />
+    <option name="LAST_COMMIT_MESSAGE" value="Support Str" />
   </component>
 </project>
