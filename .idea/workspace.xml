@@ -11,18 +11,15 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" GENERATION_DIR="build" CONFIG_NAME="Debug" GENERATION_OPTIONS="-G &quot;Unix Makefiles&quot;" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
-  <component name="CargoProjects">
-    <cargoProject FILE="$PROJECT_DIR$/thirdparty/wasmedge_wasi_socket/examples/http_client/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/thirdparty/wasmedge_wasi_socket/examples/http_server/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/../wasmedge-quickjs/examples/embed_js/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/../wasmedge-quickjs/examples/embed_js_module/Cargo.toml" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e39a54-216b-48e9-bff7-3271252508d4" name="Changes" comment="Support Str">
+    <list default="true" id="0b883b09-fbc7-47c3-a5fb-9cb643ffce21" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestWasmEdgeMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TestWasmEdgeMain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/string/say/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/demo/string/say/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +42,7 @@
     </file-type-list>
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="0buzgz0q" />
+    <option name="directoryName" value="m9pay06a" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,16 +52,12 @@
     <option name="majorVersion" value="2021" />
     <option name="minorVersion" value="3" />
   </component>
-  <component name="ProjectId" id="22PrY5iTskxy0PEkDgA3J3HR3H7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="22k0GiACex9A9mqSypPO80TEBu0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -72,126 +65,46 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wasmedge-quickjs/examples/embed_js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="org.rust.hideNoCargoProjectNotifications/home/arcosx/work/wasm-cpp/thirdparty/wasmedge-quickjs/examples/embed_js/src/main.rs" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="CMake Application.WasmEdge-String">
+  <component name="RunManager" selected="CMake Application.TestWasmEdgeMain">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestWasmtimeMain" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="wasmtime-cpp" TARGET_NAME="TestWasmtimeMain" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="wasmtime-cpp" RUN_TARGET_NAME="TestWasmtimeMain">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WasmEdge-String" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="wasmtime-cpp" TARGET_NAME="TestWasmEdgeMain" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="wasmtime-cpp" RUN_TARGET_NAME="TestWasmEdgeMain">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run http_client" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package http_client --bin http_client" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/thirdparty/wasmedge_wasi_socket/examples/http_client" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test request::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package wasmedge_http_req --lib request::tests" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/thirdparty/wasmedge_wasi_socket/examples/http_client" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Cargo.Run http_client" />
-      <item itemvalue="Cargo.Test request::tests" />
+      <item itemvalue="CMake Application.TestWasmEdgeMain" />
       <item itemvalue="CMake Application.TestWasmtimeMain" />
-      <item itemvalue="CMake Application.WasmEdge-HTTP-Client" />
-      <item itemvalue="CMake Application.WasmEdge-HTTP-Server" />
-      <item itemvalue="CMake Application.WasmEdge-JS" />
-      <item itemvalue="CMake Application.WasmEdge-String" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo.Test request::tests" />
-        <item itemvalue="Cargo.Run http_client" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
-    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e5e39a54-216b-48e9-bff7-3271252508d4" name="Changes" comment="" />
-      <created>1639750107894</created>
+      <changelist id="0b883b09-fbc7-47c3-a5fb-9cb643ffce21" name="Changes" comment="" />
+      <created>1640366184162</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1639750107894</updated>
-      <workItem from="1639750109570" duration="13305000" />
-      <workItem from="1639808776829" duration="156000" />
-      <workItem from="1639809683536" duration="12000" />
-      <workItem from="1639809757926" duration="236000" />
-      <workItem from="1639811661736" duration="1042000" />
-      <workItem from="1639813441203" duration="159000" />
-      <workItem from="1639814899088" duration="3813000" />
-      <workItem from="1639835514216" duration="6645000" />
-      <workItem from="1639929728126" duration="271000" />
-      <workItem from="1639931424237" duration="6138000" />
-      <workItem from="1640093147636" duration="1068000" />
-      <workItem from="1640188535222" duration="13381000" />
+      <updated>1640366184162</updated>
+      <workItem from="1640366185408" duration="8109000" />
     </task>
-    <task id="LOCAL-00001" summary="Support Str">
-      <created>1640280287554</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1640280287554</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Support Str" />
-    <option name="LAST_COMMIT_MESSAGE" value="Support Str" />
   </component>
 </project>

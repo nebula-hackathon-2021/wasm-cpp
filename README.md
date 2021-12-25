@@ -2,20 +2,36 @@
 
 **Please see our [main repository](https://github.com/nebula-hackathon-2021/nebula) for the application of the demo below.**
 
+## How to use
+```shell
+cd demo && python3 -m http.server 8080
+```
 ## Demo List
 
-| Name                      | Description                      | Runtime  | Param                    |
-|---------------------------|----------------------------------| -------- |--------------------------|
-| [addTwo](./demo/addTwo)   | add two number                   | wasmtime | (INT32 INT32) -> (INT32) |
-| [gcd](./demo/gcd)         | greatest common divisor          | wasmtime | (INT32 INT32) -> (INT32) |
-| [string](./demo/string)   | return string                    | WasmEdge | (STRING) -> (STRING)      |
-| Feishu Bot                | call Feishu api and send message | WasmEdge | (STRING) -> BOOL         |
-| Data Clustering by TensorFlow |                                  |          |                          |
+| Name                          | Description                      | Runtime  | Param                    | USAGE |
+|-------------------------------|----------------------------------|----------|--------------------------|-------|
+| [addTwo](./demo/addTwo)       | add two number                   | wasmtime | (INT32 INT32) -> (INT32) |       |
+| [gcd](./demo/gcd)             | greatest common divisor          | wasmtime | (INT32 INT32) -> (INT32) |       |
+| [string](./demo/string)       | return string                    | WasmEdge | (STRING) -> (STRING)     |       |
+| [Faas]                        | call an cloud function compute   | WasmEdge |                          |       |
+| Feishu Bot                    | call Feishu api and send message | WasmEdge | (STRING) -> INT          |       |
+| Trigger                       | Trigger in nebula                | WasmEdge | (STRING) -> INT          |       |
+| Data Clustering by TensorFlow |                                  |          |                          |       |
 
 
 
+### The SQL
+#### addTwo
+```gcd
+CREATE FUNCTION gcd_main(x INT32, y INT32) RETURN INT32 FROM WAT://KG1vZHVsZQogIChmdW5jICRnY2QgKHBhcmFtIGkzMiBpMzIpIChyZXN1bHQgaTMyKQogICAgKGxvY2FsIGkzMikKICAgIGJsb2NrICA7OyBsYWJlbCA9IEAxCiAgICAgIGJsb2NrICA7OyBsYWJlbCA9IEAyCiAgICAgICAgbG9jYWwuZ2V0IDAKICAgICAgICBicl9pZiAwICg7QDI7KQogICAgICAgIGxvY2FsLmdldCAxCiAgICAgICAgbG9jYWwuc2V0IDIKICAgICAgICBiciAxICg7QDE7KQogICAgICBlbmQKICAgICAgbG9vcCAgOzsgbGFiZWwgPSBAMgogICAgICAgIGxvY2FsLmdldCAxCiAgICAgICAgbG9jYWwuZ2V0IDAKICAgICAgICBsb2NhbC50ZWUgMgogICAgICAgIGkzMi5yZW1fdQogICAgICAgIGxvY2FsLnNldCAwCiAgICAgICAgbG9jYWwuZ2V0IDIKICAgICAgICBsb2NhbC5zZXQgMQogICAgICAgIGxvY2FsLmdldCAwCiAgICAgICAgYnJfaWYgMCAoO0AyOykKICAgICAgZW5kCiAgICBlbmQKICAgIGxvY2FsLmdldCAyCiAgKQogIChleHBvcnQgIm1haW4iIChmdW5jICRnY2QpKSA7OyBleHBvcnQgd2l0aCBtYWluCik=;
+RETURN UDF("gcd",[12,27]);
+```
 
-
+#### string
+```sql
+CREATE FUNCTION thestring_say(x STRING) RETURN STRING FROM PATH://http://0.0.0.0:8080/string/say/pkg/rust_bindgen_funcs_lib_bg.wasm;
+RETURN UDF("thestring",["triplez"])
+```
 
 
 

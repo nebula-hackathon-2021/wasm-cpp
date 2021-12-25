@@ -36,7 +36,7 @@ int main() {
 
     // 3
     // 3.1 insert function param
-    std::string RequestStr = "12345678";
+    std::string RequestStr = "triplez";
     std::vector<WasmEdge_Value> Args;
     // 3.1 set the magic number as first address
     uint32_t ResultMemAddr = 8;
@@ -68,7 +68,6 @@ int main() {
 
     Args.emplace_back(WasmEdge_ValueGenI32(MallocAddr));
     Args.emplace_back(WasmEdge_ValueGenI32(MallocSize));
-
 
     // 3.2.2 copy data to memory.
     std::vector<uint8_t> bufVector(StrArg.begin(), StrArg.end());
@@ -108,6 +107,18 @@ int main() {
                                          ResultDataAddr, ResultDataLen);
     if (WasmEdge_ResultOK(getFinalRes)) {
         printf("get final data success\n");
+        // begin clean the memory
+        WasmEdge_Value Params[2] = {WasmEdge_ValueGenI32(ResultDataAddr),
+                                    WasmEdge_ValueGenI32(ResultDataLen)};
+        WasmEdge_String WasmFuncName =
+                WasmEdge_StringCreateByCString("__wbindgen_free");
+        Res =
+                WasmEdge_VMExecute(VMCxt, WasmFuncName, Params, 2, nullptr, 0);
+        WasmEdge_StringDelete(WasmFuncName);
+        if (!WasmEdge_ResultOK(Res)) {
+            printf("clean failed", WasmEdge_ResultGetMessage(Res));
+            return 0;
+        }
     } else {
         printf("get final data return failed: %s\n", WasmEdge_ResultGetMessage(getFinalRes));
         return 0;
