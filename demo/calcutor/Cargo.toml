@@ -1,0 +1,14 @@
+[package]
+name = "embed_js"
+version = "0.1.0"
+authors = ["ubuntu"]
+edition = "2018"
+
+[lib]
+name = "embed_js"
+path = "src/lib.rs"
+crate-type =["cdylib"]
+
+[dependencies]
+wasm-bindgen = "=0.2.61"
+wasmedge_quickjs = "0.2.0"

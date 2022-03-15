@@ -13,11 +13,8 @@ cd demo && python3 -m http.server 8080
 | [addTwo](./demo/addTwo)       | add two number                   | wasmtime | (INT32 INT32) -> (INT32) |       |
 | [gcd](./demo/gcd)             | greatest common divisor          | wasmtime | (INT32 INT32) -> (INT32) |       |
 | [string](./demo/string)       | return string                    | WasmEdge | (STRING) -> (STRING)     |       |
-| [Faas]                        | call an cloud function compute   | WasmEdge |                          |       |
-| Feishu Bot                    | call Feishu api and send message | WasmEdge | (STRING) -> INT          |       |
-| Trigger                       | Trigger in nebula                | WasmEdge | (STRING) -> INT          |       |
-| Data Clustering by TensorFlow |                                  |          |                          |       |
-
+| [Feishu Bot](./demo/feishu)   | call Feishu api and send message | WasmEdge | (STRING) -> (STRTING)    |       |
+| [calcutor](./demo/feishu)     | an calcutor                      | WasmEdge | (STRING) -> (STRTING)   |       |
 
 
 ### The SQL
@@ -27,10 +24,25 @@ CREATE FUNCTION gcd_main(x INT32, y INT32) RETURN INT32 FROM WAT://KG1vZHVsZQogI
 RETURN UDF("gcd",[12,27]);
 ```
 
+#### gcd
+```sql
+
+```
 #### string
+```shell
+cd demo/string/say && rustwasmc build
+cd demo && python3 -m http.server 8080
+```
+
 ```sql
 CREATE FUNCTION thestring_say(x STRING) RETURN STRING FROM PATH://http://0.0.0.0:8080/string/say/pkg/rust_bindgen_funcs_lib_bg.wasm;
 RETURN UDF("thestring",["triplez"])
+```
+
+
+#### Feishu Bot
+```sql
+
 ```
 
 
